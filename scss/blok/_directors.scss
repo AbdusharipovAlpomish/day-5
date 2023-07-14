@@ -1,0 +1,153 @@
+.directors {
+  padding: 140px 0;
+  background-color: var(--secondary3);
+  background-image: url("../../images/directors1.svg"), url("../../images/companies1.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+}
+
+.directors_title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.directors_list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  row-gap: 76px;
+  flex-wrap: wrap;
+}
+
+.directors_item {
+  max-width: 350px;
+  width: 100%;
+  background-color: var(--secondary4);
+  padding: 32px 24px 56px 24px;
+  text-align: center;
+  position: relative;
+}
+
+.directors_img__blok {
+  margin-bottom: 16px;
+}
+
+.directors_name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--secondary1);
+}
+
+.directors_name__coment {
+  margin-bottom: 8px;
+}
+
+.directors_job {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--primary3);
+}
+
+.directors_sign,
+.directors_coment {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto;
+  background-color: #F67E7E;
+  border-radius: 50%;
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+}
+
+.directors_coment {
+  background-color: var(--secondary1);
+}
+
+.directors_text {
+  max-width: 254px;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--primary3);
+  margin-bottom: 24px;
+}
+
+.directors_contacts:first-child {
+  margin-left: 16px;
+}
+
+.directors_sign,
+.directors_coment {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+}
+
+.directors_sign::before {
+  content: '+';
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  color: var(--secondary4);
+  text-align: center;
+  font-weight: 700;
+  font-size: 26px;
+  margin-top: 8px;
+}
+
+.directors_coment::before {
+  content: '×';
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  color: var(--secondary4);
+  text-align: center;
+  font-weight: 700;
+  font-size: 26px;
+  margin-top: 8px;
+}
+
+@media screen and (max-width: 1200px) {
+  .directors {
+    padding: 100px 0 128px 0;
+  }
+
+  .directors_title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 48px;
+  }
+
+  .directors_list {
+    gap: 11px;
+    row-gap: 76px;
+  }
+
+  .directors_item {
+    max-width: 281px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .directors {
+    padding: 88px 0 116px 0;
+    background-position: left top -100px, right bottom;
+  }
+
+  .directors_list {
+    row-gap: 52px;
+  }
+
+  .directors_item {
+    max-width: 327px;
+  }
+}
