@@ -1,0 +1,128 @@
+.teams {
+  background: var(--secondary4);
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-image: url('../../images/teams-fon1.svg');
+  background-repeat:  no-repeat;
+  background-position:  bottom right;
+}
+
+.teams_container {
+  display: flex;
+  justify-content: space-between;
+  color: var(--primary3);
+}
+
+.teams_title {
+  max-width: 445px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  position: relative;
+}
+
+.teams_item {
+  max-width: 540px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.teams_title::before {
+  content: '';
+  width: 50px;
+  height: 4px;
+  background: var(--primary2);
+  display: inline-block;
+  position: absolute;
+  top: -54px;
+}
+
+.teams_item::before {
+  content: '';
+  width: 72px;
+  height: 72px;
+  display: inline-block;
+  margin-right: 23px;
+}
+
+.teams_item:nth-child(1):before {
+  background: url('../../images/teams-fon2.svg') no-repeat center;
+}
+
+.teams_item:nth-child(2):before {
+  background: url('../../images/teams-fon3.svg') no-repeat center;
+}
+
+.teams_item:nth-child(3):before {
+  background: url('../../images/teams-fon4.svg') no-repeat center;
+}
+
+.teams_item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.teams_sub__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--primary2);
+  margin-bottom: 16px;
+}
+
+.teams_text {
+  max-width: 445px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+@media screen and (max-width: 1100px) {
+  .teams {
+    padding: 100px 0;
+    background-position: top right;
+  }
+
+  .teams_container {
+    max-width: 573px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .teams_title {
+    margin-right: auto;
+    margin-bottom: 64px;
+    font-size: 32px;
+    line-height: 32px;
+
+    &::before {
+      top: -32px;
+    }
+  }
+
+  .teams_list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .teams {
+    padding: 64px 0;
+  }
+
+  .teams_title {
+    max-width: 234px;
+    margin-bottom: 56px;
+  }
+
+  .teams_item {
+    max-width: 327px;
+    text-align: center;
+    flex-direction: column;
+
+    &::before {
+      margin: 0 auto;
+      margin-bottom: 16px;
+    }
+  }
+}
