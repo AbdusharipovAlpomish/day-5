@@ -28,6 +28,11 @@
   border-radius: 24px;
 }
 
+.leg_contact:active {
+  background-color: var(--secondary4);
+  color: var(--primary3);
+}
+
 .leg_sub {
   background-color: var(--secondary5);
   padding: 48px 0;
@@ -64,6 +69,10 @@
   font-size: 18px;
   line-height: 28px;
   color: var(--primary3);
+}
+
+.leg_sub__link:active {
+  color: var(--primary2);
 }
 
 .leg_sub__text {

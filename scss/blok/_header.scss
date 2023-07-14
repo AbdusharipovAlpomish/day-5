@@ -34,10 +34,19 @@
   color: var(--primary3);
 }
 
+.main_header__link:hover {
+  color: var(--primary2);
+}
+
 .main_header__btn {
   padding: 11px 33px;
   border: 2px solid var(--primary3);
   border-radius: 24px;
+}
+
+.main_header__btn:hover {
+  background-color: var(--primary3);
+  color: var(--primary1);
 }
 
 .main_header__menu {

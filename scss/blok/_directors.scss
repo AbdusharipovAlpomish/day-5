@@ -59,11 +59,23 @@
   width: 56px;
   height: 56px;
   margin: 0 auto;
-  background-color: #F67E7E;
   border-radius: 50%;
   display: flex;
   align-self: flex-end;
   justify-content: center;
+  cursor: pointer;
+}
+
+.directors_sign {
+  background-color: var(--primary2);
+}
+
+.directors_sign:active {
+  background-color: var(--secondary1);
+}
+
+.directors_coment:active {
+  background-color: var(--primary2);
 }
 
 .directors_coment {
